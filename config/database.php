@@ -1,5 +1,12 @@
 <?php
 
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    $host = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $database = substr($url["path"], 1);
+
 return [
 
     /*
@@ -56,18 +63,16 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => @parse_url(getenv("DATABASE_URL"))['host'],
+            'host' => env('DB_HOST', $host),
             'port' => env('DB_PORT', '5432'),
-            'database' => @substr(parse_url(getenv("DATABASE_URL"))['path'],1),
-            'username' => @parse_url(getenv("DATABASE_URL"))['user'],
-            'password' => @parse_url(getenv("DATABASE_URL"))['pass'],
+            'database' => env('DB_DATABASE', $database),
+            'username' => env('DB_USERNAME', $username),
+            'password' => env('DB_PASSWORD', $password),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
-
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
