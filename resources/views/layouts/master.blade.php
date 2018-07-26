@@ -27,7 +27,7 @@
         <div class="py-5 bg-dark">
           <p class="m-0 text-center text-white">Copyright &copy; VideoClub 2018</p>
 
-          <img class="d-flex justify-content-center" src="{{ asset('img/Logo.png') }}" alt="Lyon Incode Logo">
+          <img class="d-flex justify-content-center w-50" src="{{ asset('img/Logo.png') }}" alt="Lyon Incode Logo">
 
         </div>
 
