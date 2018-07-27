@@ -23,18 +23,7 @@
 
       @yield('content')
       
-      <footer class="" style="position: relative;" >
-        <div class="py-5 bg-dark">
-          <!-- <p class="m-0 text-center text-white">Copyright &copy; VideoClub 2018</p> -->
-          <img class="d-flex justify-content-center mx-auto" style="width: 300px;" src="{{ asset('img/Logo.png') }}" alt="Lyon Incode Logo">
-
-        </div>
-
-        <div class="p-2 bg-secondary">
-          <p class="ml-3 m-0 text-white">Lyon Incode - Copyright &copy;</p>
-        </div>
-        <!-- /.container -->
-      </footer>
+      @include('partials.footer')
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
