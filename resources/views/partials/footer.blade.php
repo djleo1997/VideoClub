@@ -22,7 +22,7 @@
 	        	<div class="text-center social-networks mt-3">
 
 	        		<div class="">
-	                	<a href="https://www.instagram.com/lyonoficial/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	                	<a href="https://www.instagram.com/lyonproducer/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 	                    <a href="https://www.facebook.com/LyonProducer/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
 	                    <a href="https://twitter.com/djleo1997" target="_blank" class="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 	                </div>
