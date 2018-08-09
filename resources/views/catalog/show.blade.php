@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-	<div class="container" style="margin-top: 10%; margin-bottom: 11%;">
+	<div class="container" style="margin-top: 10%; margin-bottom: 10%;">
 
 		<div class="row">	
 
