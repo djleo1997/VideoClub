@@ -20,6 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/v1/catalog', 'APICatalogController@index');
 
+Route::get('/v1/catalogHome', 'APICatalogController@indexHome');
+
 Route::get('/v1/catalog/{id}', 'APICatalogController@show');
 
 Route::post('/v1/catalog', 'APICatalogController@store')->middleware('auth.basic');

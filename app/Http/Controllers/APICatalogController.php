@@ -67,4 +67,9 @@ class APICatalogController extends Controller
         	return 'Alquilado Correctamente';
         }    	
     }
+
+    public function indexHome(){
+        $peliculas = Movie::orderBy('id','DESC')->take(3)->get();
+        return response()->json($peliculas);
+    }
 }
